@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
-    <link rel="stylesheet" href="./sass/main.min.css"/>
+    <!-- <link rel="stylesheet" href="./sass/main.min.css"/> -->
+    <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
     <header class="header">
@@ -33,6 +34,25 @@
           </li>
         </ul>
     </div>
+    <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
     </header>
     <main class="main">
       <section class="filter">
@@ -45,10 +65,10 @@
           <li class="filter__item"><button class="filter__button" type="button">Diseño</button></li>
           <li class="filter__item"><button class="filter__button" type="button">Marketing</button></li>
         </ul>
-        <ul class="gallery__list list">
+        <ul class="gallery__list list p-0">
           <li class="gallery__item">
             <div class="gallery__container">
-              <img class="gallery__img" src="./images/Portafolio1.jpg" alt="portafolio sitio-web" width="370" height="294"/>
+              <img class="gallery__img" src="./images/Portafolio1.jpg" alt="portafolio sitio-web"/>
               <p class="gallery__text">Tecnoduck es una plataforma de distribución de coronavirus de última generación. Las compañías usan esta plataforma para el espionaje digital y los ataques a los servidores seguros de la competencia.</p>
             </div>
             <div class="gallery__description">
@@ -143,7 +163,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__section">
-        <ul class="footer__list list">
+        <ul class="footer__list list p-0">
           <li class="footer__item">
             <a class="footer__link" href="./index.html" rel="noopener noreferrer" target="_self">WebStudio</a></li>
           <li class="footer__item">

@@ -463,9 +463,9 @@ color: rgba(33, 33, 33, 1);
 
 .filter__list{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
+  width: 400px;
   padding-bottom: 50px;
 }
 
@@ -477,7 +477,8 @@ color: rgba(33, 33, 33, 1);
 }
 
 .gallery__item{
-  flex-basis: calc((100% - 60px) / 9);
+  width: 450px;
+  height: auto;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(238, 238, 238);
   border-radius: 4px;
@@ -487,6 +488,10 @@ color: rgba(33, 33, 33, 1);
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 
+.gallery__img{
+  width: 100%;
+  height: auto;
+}
 .gallery__item:hover .gallery__text{
   top: 0;
 }
