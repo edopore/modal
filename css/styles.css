@@ -936,16 +936,7 @@ color: rgba(33, 33, 33, 1);
 
 .menu-toggle:hover,
 .menu-toggle:focus {
-  background-color: var(--detail-color);
-}
-
-.header__navigation{
-  display: none;
-}
-
-.header__contact{
-  display: none;
-}
+  fill: var(--primary-color);
 
 .about{
   display: none;
