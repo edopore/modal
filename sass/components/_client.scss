@@ -7,6 +7,8 @@
   }
   &__list{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
   }
   &__item{
@@ -17,18 +19,18 @@
     border: 1px solid rgba(175, 177, 184, 1);
     display: flex;
     align-items: center;
-    justify-content: center, border 250ms var(--cubic);
+    justify-content: center, border 250ms $cubic;
   }
   &__link{
     width: 170px;
     height: 81px;
     display: flex;
     align-items: center;
-    justify-content: center, border 250ms var(--cubic);
+    justify-content: center, border 250ms $cubic;
     &:hover,
     &:focus{
-      fill: var(--primary-color);
-      border: 1px solid var(--primary-color);
+      fill: $primary-color;
+      border: 1px solid $primary-color;
       outline: none;
       }
     }

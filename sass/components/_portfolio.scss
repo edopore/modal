@@ -38,61 +38,68 @@
 }
 
 .filter__list{
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  width: 400px;
+  padding-bottom: 50px;
   }
   
-  .gallery{
-    &__description{
-      padding-left: 24px;
+.gallery{
+  &__description{
+    padding-left: 24px;
+  }
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    cursor: pointer;
+    justify-content: center;
+  }
+  &__subtitle{
+    color: rgba(117, 117, 117, 1);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
+  &__item{
+    width: 450px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+    &:hover .gallery__text{
+      top: 0;
+      box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
     }
-    &__list{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 30px;
-      cursor: pointer;
-    }
-    &__subtitle{
-      color: rgba(117, 117, 117, 1);
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 1.25;
-      letter-spacing: 0.03em;
-    }
-    &__item{
-      flex-basis: calc((100% - 60px) / 9);
-      background-color: rgb(255, 255, 255);
-      border: 1px solid rgb(238, 238, 238);
-      border-radius: 4px;
-      &:hover .gallery__text{
-        top: 0;
-        box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-      }
-    }
-    &__container{
-      position: relative;
-      overflow: hidden;  
-    }
-    &__text{
-      top: 100%;
-      margin: 0;
-      padding: 63px 24px;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 4px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 18px;
-      font-weight: 400;
-      line-height: 1.55;
-      letter-spacing: 0.03em;
-      text-align: center;
-      color: $detail-color;
-      background-color: rgba(33, 150, 243, 0.9);
-      transition: top 250ms $cubic;
-    }
+  }
+  &__container{
+    position: relative;
+    overflow: hidden;  
+  }
+  &__text{
+    top: 100%;
+    margin: 0;
+    padding: 63px 24px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: $detail-color;
+    background-color: rgba(33, 150, 243, 0.9);
+    transition: top 250ms $cubic;
+  }
+  &__img{
+    width: 100%;
+    height: auto;
+  }
 }

@@ -6,10 +6,15 @@
   align-items: start;
   padding-top: 60px;
   padding-bottom: 60px;
+  &__item{
+    padding-bottom: 20px;
+  }
   &__section{
     display: flex;
-    justify-content: start;
-    align-items: baseline;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     gap: 70px;
   }
   &__link{
@@ -30,6 +35,9 @@
     line-height: 1.17;
     letter-spacing: 0.03em;
   }
+  &__list{
+    text-align: center;
+  }
 }
 
 
@@ -40,7 +48,7 @@
     font-style: normal;
     font-size: 14px;
     font-weight: 400;
-    line-height: 1.71;
+    line-height: 2;
     letter-spacing: 0.03em;
     transition: color 250ms $cubic;
     &:hover,
@@ -78,6 +86,7 @@
     border-radius: 50%;
     width: 44px;
     height: 44px;
+    transition: background-color 250ms $cubic, color 250ms $cubic;
     &:hover,
     &:focus{
       fill: $detail-color;
@@ -93,6 +102,7 @@
     font-weight: 700;
     letter-spacing: 0.42px;
     text-transform: uppercase; 
+    text-align: center;
   }
 }
 
@@ -103,31 +113,28 @@
     font-style: normal;
     font-weight: 700;
     letter-spacing: 0.42px;
-    text-transform: uppercase; 
+    text-transform: uppercase;
+    text-align: center; 
   } 
   &__input{
     position: relative;
-    width: 358px;
+    width: 90vw;
     height: 50px;
-    padding: 11px 11px 11px 16px;
+    padding-left: 16px;
     outline: none;
     color: $detail-color;
-    background: rgba(33, 150, 243, 0.00); 
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 0.3);
-    border-image: initial;
+    background: transparent; 
+    border: 1px solid rgba(255, 255, 255, 0.30);
     border-radius: 4px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: border-color 250ms $cubic;
     transition: background-color 250ms $cubic, color 250ms $cubic;
   }
   &__button{
-    position: absolute;
+    position: relative;
     color: $detail-color;
     background-color: $primary-color;
     text-align: left;
-    margin-left: 12px;
     width: 200px;
     height: 50px;
     border: none;
@@ -151,5 +158,13 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%)
+  }
+  &__form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap ;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
   }
 }

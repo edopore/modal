@@ -1,5 +1,18 @@
+.container{
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .list{
   list-style: none;
+}
+
+.img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .current{
@@ -20,12 +33,6 @@
 .primary-button:hover{
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-}
-
-.container{
-  width: 1280px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .section{

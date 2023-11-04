@@ -15,8 +15,8 @@
 .modal{
   position: fixed;
   background-color: $detail-color;
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   margin: auto;
   padding: 8px;
   top: 50%;
@@ -45,6 +45,7 @@
   justify-items: center;
   align-items: center;
   transition: fill 250ms $cubic;
+  z-index: 2;
   &:hover,
   &:focus{
     fill: $primary-color;
@@ -64,15 +65,18 @@
   &__title{
     padding-top: 40px;
     padding-bottom: 12px;
+    padding-left: 10%;
+    padding-right: 10%;
     margin: auto;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.172;
     letter-spacing: 0.03em;
+    text-align: center;
   }
   &__field{
-    padding-left: 10px;
+    padding-left: 10%;
     color: #757575;
     font-family: Roboto;
     font-size: 12px;
@@ -99,7 +103,7 @@
 .form{
   &__input{
     position: relative;
-    width: 448px;
+    width: 92%;
     height: 40px;
     margin-top: 4px;
     margin-bottom: 10px;
@@ -114,11 +118,11 @@
   }
   &__icon{
     position: absolute;
-    left: 5%;
+    left: 15%;
     margin-top: 3%;
   }
   &__textarea{
-    width: 448px;
+    width: 92%;
     height: 120px;
     outline: none;
     padding: 12px 16px;
@@ -137,6 +141,7 @@
     letter-spacing: 0.03em;
     text-align: left;
     padding-left: 36px;
+    padding-right: 36px;
     display: flex;
   }
   &__check{
@@ -164,7 +169,7 @@
   padding: 12px 32px;
   width: 200px;
   height: 50px;
-  margin-left: 25%;
+  margin-left: 15%;
   outline: none;
   transition: color 250ms $cubic;
   &:hover,
