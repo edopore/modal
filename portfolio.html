@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
-    <link rel="stylesheet" href="./sass/main.css"/>
-    <!-- <link rel="stylesheet" href="./css/styles.css"/> -->
+    <!-- <link rel="stylesheet" href="./sass/main.css"/> -->
+    <link rel="stylesheet" href="./css/styles.css"/>
   </head>
   <body>
     <header class="header">
@@ -220,5 +220,44 @@
         </div>
         </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          class="menu-img"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            class="menu-img"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+  
+      <ul class="mobile-menu">
+        <li><a href="./index.html" class="mobile__link link">Studio</a></li>
+        <li><a href="./portfolio.html" class="mobile__link link">Portfolio</a></li>
+        <li><a href="" class="mobile__link link">Contacts</a></li>
+      </ul>
+      <ul class="mobile-menu">
+        <li class=""><a class="mobile__link mobile__link--tel" href="tel:+525555296000">+52 55 5529 6000</a></li>
+        <li class=""><a class="mobile__link mobile__link--email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+      </ul>    
+      <ul class="mobile-menu mobile-menu--social">
+        <li><a href="" class="mobile__link mobile__link--social">Instagram</a></li>
+        <li><a href="" class="mobile__link mobile__link--social">Twitter</a></li>
+        <li><a href="" class="mobile__link mobile__link--social">Facebook</a></li>      
+        <li><a href="" class="mobile__link mobile__link--social border">LinkedIn</a></li>
+      </ul>
+    </div>
+    <script
+        defer
+        src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+      <script defer src="./js/menu.js"></script>
   </body>
 </html>
