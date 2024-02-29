@@ -994,7 +994,7 @@ body {
     justify-content: center;
   }
   .gallery__list {
-    justify-content: flex-start;
+    justify-content: center;
   }
   .gallery__item {
     width: 354px;
