@@ -1,5 +1,12 @@
+body{
+  font-family: 'Roboto', sans-serif;
+  color: $general-color;
+  position: relative;
+  width: 100hv;
+}
+
 .container{
-  width: 100vw;
+  width: 1024px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -48,3 +55,4 @@
 .p-0{
   padding: 0;
 }
+

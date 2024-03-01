@@ -1,456 +1,66 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WebStudio</title>
+  <title>Modal Pelicula</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
   <!-- <link rel="stylesheet" href="./sass/main.css"/> -->
-  <link rel="stylesheet" href="./sass/main.min.css"/>
+  <link rel="stylesheet" href="./sass/main.css"/>
 </head>
 <body>
-  <header class="header">
-    <div class="container header__container">
-      <a class="header__title" href="./index.html" rel="noopener noreferrer" target="_self">Web<span style="color: #000">Studio</span></a>
-      <nav class="header__navigation">
-        <ul class="header__links list">
-          <li class="header__item"><a class="header__link current" href="./index.html">Estudio</a></li>
-          <li class="header__item"><a class="header__link" href="./portfolio.html">Portafolio</a></li>
-          <li class="header__item"><a class="header__link" href="#contact">Contactos</a></li>
-        </ul>
-      </nav>
-      <ul class="header__contact list">
-        <li class="header__item-contact">
-          <ul class="header__activ-contact list">
-            <li><a classs="header__link-contact"><svg class="header__link-contact p-0" width="16px" height="12px"><use href="./images/icons.svg#icon-sobre"></use></svg></a></li>
-            <li><a class="header__link-contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          </ul>
-        </li>
-        <li class="header__item-contact">
-          <ul class="header__activ-contact list">  
-            <li><a class="header__link-contact"><svg class="header__link-contact" width="10px" height="16px"><use href="./images/icons.svg#icon-telfono-inteligente"></use></svg></a></li>
-            <li><a class="header__link-contact" href="tel:+525555296000">+52 55 5529 6000</a></li>
-          </ul>
-        </li>
-      </ul>
-  </div>
-  <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="24"
-            height="24"
-            fill="currentColor"
-            viewBox="0 0 20 20"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-              clip-rule="evenodd"
-            ></path>
-          </svg>
-        </button>
-  </header>
-  <main>
-    <section class="main main__bg">
-      <div class="container main__hero">
-        <h1 class="main__title">SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button class="main__button" type="button" data-modal-open="">Solicite nuestro servicio</button>
-      </div>
-    </section>
-    <section class="benefit">
-      <div class="container section">
-        <h2 style="display: none;">Beneficios</h2>
-        <ul class="benefit__list list p-0">  
-          <li class="benefit__item">
-            <ul class="benefit__list-icon list p-0">
-            <li class="benefit__item-icon"><svg width="70px" height="70px"><use href="./images/icons.svg#icon-antena-1"></use></svg></li>
-            </ul>
-            <h3 class="benefit__title">ATENCIÓN A LOS DETALLES</h3>
-            <p class="benefit__text">Nos adentramos en todos los detalles y procesos de su negocio, para así desarrollar una solución a su medida.</p>
-          </li>
-          <li class="benefit__item">
-            <ul class="benefit__list-icon list p-0">
-              <li class="benefit__item-icon"><svg width="70px" height="70px"><use href="./images/icons.svg#icon-reloj-1"></use></svg></li>
-              </ul>
-            <h3 class="benefit__title">PUNTUALIDAD</h3>
-            <p class="benefit__text">Con nosotros, usted puede sentirse seguro y protegido. Un principio importante de la empresa: respetar su tiempo y respetar los plazos acordados.</p>
-          </li>
-          <li class="benefit__item">
-            <ul class="benefit__list-icon list p-0">
-              <li class="benefit__item-icon"><svg width="70px" height="70px"><use href="./images/icons.svg#icon-diagrama-1"></use></svg></li>
-              </ul>
-            <h3 class="benefit__title">PLANIFICACIÓN</h3>
-            <p class="benefit__text">Usted podrá observar y participar en cada fase del desarrollo y aplicación de soluciones.</p>
-          </li>
-          <li class="benefit__item">
-            <ul class="benefit__list-icon list p-0">
-              <li class="benefit__item-icon"><svg width="70px" height="70px"><use href="./images/icons.svg#icon-astronauta-1"></use></svg></li>
-              </ul>
-            <h3 class="benefit__title">TEGNOLOGÍA MODERNA</h3>
-            <p class="benefit__text">Usamos herramientas innovadoras para resolver las tareas asignadas. Es hora de simplificar los procesos laborales.</p>
-          </li>
-        </ul>
-      </div>  
-    </section> 
-    <section class="about">
-      <div class="container section">
-        <h2 class="about__title">A qué nos dedicamos</h2>
-        <ul class="about__list list">
-          <li class="about__item">
-            <div class="about__imgcontainer">
-            <img src="./images/about1.jpg" alt="programacion" width="370" height="294">
-            <h3 class="about__text">APLICACIONES DE ESCRITORIO</h3>
-            </div>
-          </li>
-          <li class="about__item">
-            <div class="about__imgcontainer">
-            <img src="./images/about2.jpg" alt="diseño" width="370" height="294">
-            <h3 class="about__text">APLICACIONES MÓVILES</h3>
-            </div>
-          </li>
-          <li class="about__item">
-            <div class="about__imgcontainer">
-            <img src="./images/about3.jpg" alt="colorimetria" width="370" height="294">
-            <h3 class="about__text">SOLUCIONES DE DISEÑO</h3>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="team">
-      <div class="container section">
-        <h2 class="team__title">Nuestro Equipo</h2>
-          <ul class="team__list list p-0">
-            <li class="team__member">
-              <img class="member__img" src="./images/team1.jpg" alt="Foto diseñador" width="270" height="260">
-              <h3 class="member__name">Andrés Cubo</h3>
-              <p class="member__text">Diseñador de Productos</p>
-              <ul class="member__list list p-0">
-                <li class="member__item">
-                <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-                </a>
-              </li>
-                <li class="member__item">
-                  <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                  </a>
-                </li>
-                <li class="member__item">
-                  <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                  </a>
-                </li>
-                <li class="member__item">
-                  <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                  </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="team__member">
-              <img class="member__img" src="./images/team2.jpg" alt="foto desarrolladora frontend" width="270" height="260">
-              <h3 class="member__name">Carla Palacios</h3>
-              <p class="member__text">Desarrolladora Frontend</p>
-              <ul class="member__list list p-0">
-                <li class="member__item">
-                <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-                </a>
-              </li>
-                <li class="member__item">
-                  <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                  </a>
-                </li>
-                <li class="member__item">
-                  <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                  </a>
-                </li>
-                <li class="member__item">
-                  <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                  </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="team__member">
-              <img class="member__img" src="./images/team3.jpg" alt="foto marketing" width="270" height="260">
-              <h3 class="member__name">Mario Dorado</h3>
-              <p class="member__text">Marketing</p>
-              <ul class="member__list list p-0">
-                <li class="member__item">
-                <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-                </a>
-              </li>
-                <li class="member__item">
-                  <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                  </a>
-                </li>
-                <li class="member__item">
-                  <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                  </a>
-                </li>
-                <li class="member__item">
-                  <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                  </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="team__member">
-              <img class="member__img" src="./images/team4.jpg" alt="foto desarrollador iu" width="270" height="260">
-              <h3 class="member__name">Pablo Mijangos</h3>
-              <p class="member__text">Diseñador IU</p>
-              <ul class="member__list list p-0">
-                <li class="member__item">
-                <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-                </a>
-              </li>
-                <li class="member__item">
-                  <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                    <use href="./images/icons.svg#icon-twitter"></use>
-                  </svg>
-                  </a>
-                </li>
-                <li class="member__item">
-                  <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                    <use href="./images/icons.svg#icon-facebook"></use>
-                  </svg>
-                  </a>
-                </li>
-                <li class="member__item">
-                  <a class="member__link" tabindex="0">
-                  <svg wigth="20px" height="20px">
-                    <use href="./images/icons.svg#icon-linkedin-1"></use>
-                  </svg>
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-      </div>
-    </section>
-    <section class="client">
-      <div class="container section client__section">
-          <h2 class="client__title">Clientes Regulares</h2>
-          <ul class="client__list list p-0">
-            <li class="client__item">
-              <a class="client__link" tabindex="0">
-              <svg wigth="41px" height="46.7px">
-                <use href="./images/icons.svg#icon-client1"></use>
-              </svg>
-              </a>
-            </li>
-            <li class="client__item">
-              <a class="client__link" tabindex="0">
-              <svg wigth="40px" height="52px">
-                <use href="./images/icons.svg#icon-client2"></use>
-              </svg>
-              </a>
-            </li>
-            <li class="client__item">
-              <a class="client__link" tabindex="0">
-              <svg wigth="43.46px" height="41.18px">
-                <use href="./images/icons.svg#icon-client3"></use>
-              </svg>
-              </a>
-            </li>
-            <li class="client__item">
-              <a class="client__link" tabindex="0">
-              <svg wigth="84.44px" height="40.62px">
-                <use href="./images/icons.svg#icon-client4"></use>
-              </svg>
-              </a>
-            </li>
-            <li class="client__item">
-              <a class="client__link" tabindex="0">
-              <svg wigth="62.54px" height="45.43px">
-                <use href="./images/icons.svg#icon-client5"></use>
-              </svg>
-              </a>
-            </li>
-            <li class="client__item">
-              <a class="client__link" tabindex="0">
-              <svg wigth="93.79px" height="43.93px">
-                <use href="./images/icons.svg#icon-client6"></use>
-              </svg>
-              </a>
-            </li>
-        </ul>
-      </div>
-    </section>
-  </main>  
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__section">
-      <ul class="footer__list list p-0">
-        <li class="footer__item">
-          <a class="footer__link" href="./index.html" rel="noopener noreferrer" target="_self">Web<span style="color:#fff">Studio</span></a></li>
-        <li class="footer__item">
-        <address class="address">
-        <ul class="address__list list p-0">
-          <li class="address__item"><a class="address__link" href="https://goo.gl/maps/upbAMfbwc4J9mrwDA" rel="noopener noreferrer" target="_blank">Calz. Ticomán 500, Ciudad de<br> México, CDMX, México</a></li>
-          <li class="address__item"><a class="address__link address__link--contact" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="address__item"><a class="address__link address__link--contact" href="tel:+525555296000">+52 55 5529 6000</a></li>
-        </ul>
-        </address>
+  <section class="main">
+    <ul class="gallery__list list p-0">
+      <li class="gallery__item">
+        <div class="gallery__container" data-modal-open="">
+          <img class="gallery__img" src="./images/pelicula1.jpg" alt="pelicula"/>
+        </div>
+        <div class="gallery__description">
+          <h3 class="gallery__title">A FISTFUL OF LEAD</h3>
+          <p class="gallery__subtitle">Western | 2019</p>
+        </div>
       </li>
-      </ul>
-      <div class= "footer__follow p-0" id="contact">
-        <h3 class="follow__title">ENCUENTRENOS EN</h3>
-        <ul class="follow__list list p-0">
-          <li class="follow__item">
-          <a class="follow__link" tabindex="0">
-          <svg wigth="20px" height="20px">
-            <use href="./images/icons.svg#icon-instagram"></use>
-          </svg>
-          </a>
-          </li>
-          <li class="follow__item">
-            <a class="follow__link" tabindex="0">
-            <svg wigth="20px" height="20px">
-              <use href="./images/icons.svg#icon-twitter"></use>
-            </svg>
-            </a>
-          </li>
-          <li class="follow__item">
-            <a class="follow__link" tabindex="0">
-            <svg wigth="20px" height="20px">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-            </a>
-          </li>
-          <li class="follow__item">
-            <a class="follow__link" tabindex="0">
-            <svg wigth="20px" height="20px">
-              <use href="./images/icons.svg#icon-linkedin-1"></use>
-            </svg>
-            </a>
-          </li>
+    </ul>
+  </section>
+
+
+<!-- Modal -->
+<div class="backdrop is-hidden" data-modal="">
+  <div class="modal">
+    <button class="modal__button-close" type="button" data-modal-close="">
+      <svg width="20px" height="20px"><use href="./images/icons.svg#icon-close-black"></use></svg>
+    </button>
+    <div class="modal__container p-0">
+    <div class="modal__left">
+      <img class="modal__img" src="./images/pelicula1.jpg" alt="pelicula"/>
+    </div>
+    <div class="modal-right">
+      <h2>A FISTFUL OF LEAD</h2>
+        <div class="properties ">
+        <ul class="properies__list list p-0">
+          <li class="properties__text">Vote / Votes</li>
+          <li class="properties__text">Popularity</li>
+          <li class="properties__text">Original Title</li>
+          <li class="properties__text">Genre</li>
         </ul>
-      </div>
-      <div class= "footer__subscribe p-0">
-        <h3 class="subscribe__title">SUSCRÍBASE AL BOLETÍN INFORMATIVO</h3>
-        <form class="subscribe__form">
-            <input class="subscribe__input" type="email" name="email" placeholder="Correo electrónico"/>
-            <button class="subscribe__button" type="submit">Suscríbase<svg class="subscribe__icon" wigth="24px" height="24px">
-              <use href="./images/icons.svg#icon-enviar"></use></svg>
-            </button>
-        </form>
-      </div>
-      </div>
-  </footer>
-  <div class="backdrop is-hidden" data-modal="">
-    <div class="modal">
-      <button class="modal__button-close" type="button" data-modal-close="">
-        <svg width="18px" height="18px"><use href="./images/icons.svg#icon-close-black"></use></svg>
-      </button>
-      <form class="form__container">
-        <h3 class="form__title">Deje sus datos, nos contactaremos con usted</h3>
-        <div class="form__field">
-          <label for="name">Nombre</label>
-            <div class="form__label">
-              <input class="form__input" type="text" name="nombre" id="name"/>
-              <svg class="form__icon" width="18px" height="18px"><use href="./images/icons.svg#icon-user"></use></svg>
-            </div>
-          <label for="phone">Telefono</label>
-            <div class="form__label">
-              <input class="form__input" type="tel" name="telefono" id="phone"/>
-              <svg class="form__icon" width="18px" height="18px"><use href="./images/icons.svg#icon-phone"></use></svg>
-            </div>
-          <label for="email">E-mail</label>
-            <div class="form__label">
-              <input class="form__input" type="email" name="email" id="email"/>
-              <svg class="form__icon" width="18px" height="18px"><use href="./images/icons.svg#icon-email"></use></svg>
-            </div>
-        <label for="user-comments">Comentarios</label> 
-            <div class="form__label">
-              <textarea class="form__textarea" type="feedback" id="user-comments" placeholder="Introduzca el texto"></textarea>
-            </div>
-        <label for="checkbox" class="form__check-text">Estoy de acuerdo con el boletín informativo y acepto los Términos y Condiciones</label>
-        <input type="checkbox" name="checkbox" id="checkbox" class="form__check">
-        <button class="form__button-send" type="submit">Enviar</button>   
-      </div>
-      <script src="./js/modal.js"></script>
-      </form>
+        <ul class="list p-0">
+          <ul class="list properties g-0 p-0">
+            <li class="properties__text start p-0">7.3</li>
+            <li class="properties__text properties__text-description">/ 1260</li>
+          </ul>
+          <li class="properties__text properties__text-description">100.2</li>
+          <li class="properties__text properties__text-description">A FISTFUL OF LEAD</li>
+          <li class="properties__text properties__text-description">Western </li>
+        </ul>
+        </div>
+      <p class="properties__text properties__text-about">ABOUT</p>
+      <p class="properties__text properties__text-sipnosis">Four of the West’s most infamous outlaws assemble to steal a huge stash of gold from the most corrupt settlement of the gold rush towns. But not all goes to plan one is killed and the other three escapes with bags of gold hide out in the abandoned gold mine where they happen across another gang of three – who themselves were planning to hit the very same bank! As tensions rise, things go from bad to worse as they realise the bags of gold are filled with lead... they’ve been double crossed – but by who and how? </p>
+      <button class="modal__button modal__button-active">ADD TO WATCHED</button>
+      <button class="modal__button">ADD TO QUEUE</button>
     </div>
   </div>
-  <div class="menu-container js-menu-container" id="mobile-menu">
-    <button class="menu-toggle js-close-menu">
-      <svg
-        class="menu-img"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-      >
-        <path
-          class="menu-img"
-          d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-          clip-rule="evenodd"
-        ></path>
-      </svg>
-    </button>
-
-    <ul class="mobile-menu">
-      <li><a href="./index.html" class="mobile__link link">Studio</a></li>
-      <li><a href="./portfolio.html" class="mobile__link link">Portfolio</a></li>
-      <li><a href="" class="mobile__link link">Contacts</a></li>
-    </ul>
-    <ul class="mobile-menu">
-      <li class=""><a class="mobile__link mobile__link--tel" href="tel:+525555296000">+52 55 5529 6000</a></li>
-      <li class=""><a class="mobile__link mobile__link--email" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-    </ul>    
-    <ul class="mobile-menu mobile-menu--social">
-      <li><a href="" class="mobile__link mobile__link--social">Instagram</a></li>
-      <li><a href="" class="mobile__link mobile__link--social">Twitter</a></li>
-      <li><a href="" class="mobile__link mobile__link--social">Facebook</a></li>      
-      <li><a href="" class="mobile__link mobile__link--social border">LinkedIn</a></li>
-    </ul>
   </div>
-  <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"></script>
-    <script defer src="./js/menu.js"></script>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
