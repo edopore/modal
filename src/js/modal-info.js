@@ -1,6 +1,4 @@
 import { fetchMovieDetails } from './api';
-import Notiflix from 'notiflix';
-
 
 const refs = {
   openModalBtn: document.querySelector('[data-modal-open]'),
@@ -47,6 +45,9 @@ export function toggleModal(id) {
 export function removeModal() {
   refs.modal.classList.add('is-hidden');
 }
+
+export function saveToWatched() {}
+
 /* 
   poster_path: es el codigo de la imagen de poster
   enlace para llamar imagen https://image.tmdb.org/t/p/original/${poster_path}
