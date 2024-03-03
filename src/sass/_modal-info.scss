@@ -57,6 +57,9 @@
   &--value {
     color: $black-primary;
   }
+  &--title {
+    text-transform: uppercase;
+  }
 }
 #og-title {
   width: 120px;
@@ -81,7 +84,8 @@
   &-info {
     display: flex;
     flex-wrap: wrap;
-    @media screen and (min-width: 320px) {
+    align-content: flex-start;
+    @media screen and(min-width:320px) {
       width: 236px;
       padding-bottom: 15px;
     }
@@ -228,7 +232,6 @@
     text-align: left;
     color: #8c8c8c;
     padding: 6px 0px;
-    width: 90%;
   }
   &__text-description {
     line-height: 1.16;
@@ -241,7 +244,6 @@
     line-height: 1.67;
     color: black;
     align-content: justify;
-    max-width: 396px;
   }
 }
 
