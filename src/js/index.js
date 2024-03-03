@@ -1,5 +1,6 @@
-import { fetchAllMovies, fetchSameMovies, fetchMovieDetails } from './api.js';
-import { removeModal, toggleModal } from './modal-info.js';
+import { fetchAllMovies } from './api.js';
+import { toggleModal } from './modal-info.js';
+import { addToWatched, addToQueue } from './add-movie.js';
 
 const galleryList = document.getElementById('gallery-list');
 const firstModal = document.querySelector('li[first-modal]');
@@ -22,12 +23,34 @@ fetchAllMovies().then(data => {
             </div>
         </div>
     </li>`;
+ 
   });
 });
 
 galleryList.addEventListener('click', event => {
   toggleModal(event.target.offsetParent.id);
-});
+
 /*fetchSameMovies('tears', 1);
 fetchMovieDetails(1217605);
 */
+
+ // Obtener el ID de la película y asignarlo a los botones dentro del modal
+ const movieId = event.target.offsetParent.id;
+  const modalButtonWatched = document.querySelector('.modal__button-active');
+  const modalButtonQueue = document.querySelector('.modal__button');
+  modalButtonWatched.dataset.movieId = movieId;
+  modalButtonQueue.dataset.movieId = movieId;
+});
+
+ document.addEventListener('click', event => {
+  if (event.target.matches('.modal__button-active')) {
+    const movieId = event.target.dataset.movieId;
+    console.log(movieId)
+    addToWatched(movieId);
+
+  } else if (event.target.matches('.modal__button')) {
+    const movieId = event.target.dataset.movieId;
+    console.log(movieId)
+    addToQueue(movieId);
+  }
+});

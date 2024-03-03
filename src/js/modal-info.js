@@ -1,4 +1,6 @@
 import { fetchMovieDetails } from './api';
+import Notiflix from 'notiflix';
+
 
 const refs = {
   openModalBtn: document.querySelector('[data-modal-open]'),
